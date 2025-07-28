@@ -1,104 +1,94 @@
+# 🐉 Installing Kali Linux Inside Kali Using VirtualBox
 
-# 🔐 Kali in Kali — VirtualBox Installation Guide
-
-This guide walks you through the process of installing **Kali Linux inside Kali Linux** using **VirtualBox** — a perfect setup for creating a safe ethical hacking lab inside your main Kali system.
-
----
-
-## 📥 Step 1: Download Kali Linux (VirtualBox Image)
-
-Head to the official Kali downloads page:
-
-👉 [Download Kali VirtualBox Image](https://www.kali.org/get-kali/#kali-virtual-machines)
-
-Choose the **VirtualBox** option.
-
-![Download Image](https://lh3.googleusercontent.com/drive-viewer/AITFw-zq-rk4Z7mLnHqtKZXscNjSP7CeLn3hpg0OB_4NyCn3yo08TrVopk3-N_ZxUHFZ6ymDsj_t3pY=w1920-h902)
+This guide walks you through the step-by-step process of installing **Kali Linux inside another Kali system** using **Oracle VirtualBox**.
 
 ---
 
-## 🗜 Step 2: Extract the `.7z` Archive
+## 📥 Step 1: Download Kali VirtualBox Image
 
-Use the following command to extract:
+Visit the [official Kali downloads page](https://www.kali.org/get-kali/#kali-virtual-machines) and download the VirtualBox image.
+
+![Download Kali VirtualBox](./images/kali-download.png)
+
+---
+
+## 🧰 Step 2: Install Dependencies and VirtualBox
+
+Run the following commands to install required packages:
 
 ```bash
-sudo apt install p7zip-full
-7z x kali-linux-*.7z
+sudo apt update
+sudo apt install -y gcc make perl dkms build-essential
 ```
 
-You’ll get two files:
+Then download the correct `.deb` package for your distribution from the [VirtualBox Linux Downloads](https://www.virtualbox.org/wiki/Linux_Downloads) page.
 
-- `.vbox` → VM settings
-- `.vdi` → Virtual hard disk
-
-![Extracted Files](https://lh3.googleusercontent.com/drive-viewer/AITFw-z5sXWSoL5axqNnRRcS1uT0-2zqK1r-ec-wVdR5qxEDw7bq-5unQXvFrtXgAk-1qsNjaDHoPcrU=w1920-h902)
-
----
-
-## 🖥️ Step 3: Import the VM in VirtualBox
-
-Open VirtualBox → Click **Machine > Add** → Select the `.vbox` file.
-
-This will register the Kali guest VM.
-
----
-
-## ❌ Common Error: Kernel Driver Not Installed (rc=-1908)
-
-If you get this error when starting the VM:
-
-![Kernel Driver Error](https://lh3.googleusercontent.com/drive-viewer/AITFw-w5NLaMRJALPTr7VjcWFiZGKrkR74sVXUvEzv-1rNuf9M1sI4CEpg7dckZTO1R8sRpYvwweUGA=w1920-h902)
-
----
-
-## ✅ Fix: Install Supported Kernel and Headers
+> Example for Debian Bookworm:
 
 ```bash
-sudo apt install linux-image-6.12.33+kali-amd64 linux-headers-6.12.33+kali-amd64
-sudo update-grub
-sudo reboot
+sudo dpkg -i virtualbox-7.1_7.1.12-169651~Debian~bookworm_amd64.deb
+sudo apt --fix-broken install
 ```
 
-On reboot, select:
-```
-Advanced Options → Kali, with Linux 6.12.33+kali-amd64
-```
+If there are missing dependencies, use:
 
-Verify:
 ```bash
-uname -r
+sudo apt --fix-broken install
 ```
 
-Expected:
-```
-6.12.33+kali-amd64
-```
+![Installing VirtualBox .deb](./images/virtualbox-dpkg.png)
 
 ---
 
-## 🧰 Load VirtualBox Module
+## ⚙️ Step 3: Launch VirtualBox
 
-```bash
-sudo apt install --reinstall virtualbox virtualbox-dkms
-sudo modprobe vboxdrv
-```
-
-Then start VirtualBox again:
+Launch VirtualBox from your menu or terminal.
 
 ```bash
 virtualbox
 ```
 
----
+You should see the VirtualBox GUI.
 
-## 🎉 Success!
-
-Your Kali-in-Kali lab is now up and running.
-
-> Keep this setup isolated for testing tools, exploits, or CTF training — without affecting your host system.
+![VirtualBox GUI](./images/virtualbox-main.png)
 
 ---
 
-### 🤝 Credits
-Prepared with ❤️ by Amal  
-📄 Based on step-by-step experimentation inside a real Kali Linux environment
+## 🆕 Step 4: Import Kali VirtualBox Image
+
+Click on **Import**, then select the `.ova` file you downloaded and follow the wizard.
+
+![Import Kali VM](./images/import-kali.png)
+
+---
+
+## 🖥️ Step 5: Run Your Kali VM
+
+Once imported, select the VM and click **Start**.
+
+![Running Kali in VBox](./images/kali-running.png)
+
+---
+
+## 🎉 Done!
+
+You now have Kali running inside Kali!
+
+![Kali Inside Kali](./images/kali-inside-kali.png)
+
+---
+
+## 🔧 Troubleshooting
+
+If you get the `Kernel driver not installed (rc=-1908)` error:
+
+```bash
+sudo apt install linux-headers-$(uname -r)
+sudo modprobe vboxdrv
+```
+
+> Make sure your current kernel has matching headers. You can verify your kernel using `uname -r`.
+
+---
+
+> 📸 Screenshots and documentation created by [Amal](https://github.com/amalpvatayam67)
