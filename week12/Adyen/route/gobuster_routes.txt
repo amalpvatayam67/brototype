@@ -1,0 +1,50 @@
+/.well-known/assetlinks.json.html[32m (Status: 200)[0m [Size: 1057]
+/.well-known/assetlinks.json[32m (Status: 200)[0m [Size: 1057]
+/.well-known/security.txt[32m (Status: 200)[0m [Size: 464]
+/.well-known/security.txt.html[32m (Status: 200)[0m [Size: 464]
+/Index               [32m (Status: 200)[0m [Size: 548142]
+/Index.html          [32m (Status: 200)[0m [Size: 548142]
+/about               [32m (Status: 200)[0m [Size: 714499]
+/authentication      [36m (Status: 301)[0m [Size: 36][34m [--> /uplift/authenticate][0m
+/campaigns           [36m (Status: 301)[0m [Size: 17][34m [--> /][0m
+/careers             [36m (Status: 301)[0m [Size: 41][34m [--> https://careers.adyen.com/][0m
+/contact             [32m (Status: 200)[0m [Size: 515995]
+/customers           [32m (Status: 200)[0m [Size: 1881410]
+/customers.html      [32m (Status: 200)[0m [Size: 1881410]
+/de_DE               [32m (Status: 200)[0m [Size: 247111]
+/devices             [32m (Status: 200)[0m [Size: 396833]
+/enterprise          [36m (Status: 301)[0m [Size: 228][34m [--> /knowledge-hub/forrester-wave-merchant-payment-providers-q1-2024?utm_medium=online_advertising&utm_source=Google&utm_campaign=2024-04-OA-US-StripeCompete-Programmatic&utm_content=ConferenceAttendees-StripeCompete][0m
+/events              [32m (Status: 200)[0m [Size: 358916]
+/favicon.ico         [32m (Status: 200)[0m [Size: 1150]
+/favicon.ico.html    [32m (Status: 200)[0m [Size: 1150]
+/index               [32m (Status: 200)[0m [Size: 548142]
+/index.html          [32m (Status: 200)[0m [Size: 548142]
+/index.html          [32m (Status: 200)[0m [Size: 548142]
+/index.html.html     [32m (Status: 200)[0m [Size: 548142]
+/industries.html     [32m (Status: 200)[0m [Size: 515696]
+/industries          [32m (Status: 200)[0m [Size: 515696]
+/index.htm           [32m (Status: 200)[0m [Size: 548142]
+/ir                  [36m (Status: 301)[0m [Size: 44][34m [--> https://investors.adyen.com/][0m
+/it_IT               [32m (Status: 200)[0m [Size: 210970]
+/ja_JP               [32m (Status: 200)[0m [Size: 174017]
+/landing             [32m (Status: 200)[0m [Size: 358916]
+/legal               [32m (Status: 200)[0m [Size: 509609]
+/licenses            [32m (Status: 200)[0m [Size: 503310]
+/manuals             [32m (Status: 200)[0m [Size: 251532]
+/newsletter          [32m (Status: 200)[0m [Size: 309960]
+/offices             [32m (Status: 200)[0m [Size: 585051]
+/partners            [32m (Status: 200)[0m [Size: 539578]
+/pgp                 [36m (Status: 301)[0m [Size: 107][34m [--> https://docs.adyen.com/development-resources/migrating-payment-data/pgp/#generic-public-key][0m
+/podcast             [32m (Status: 200)[0m [Size: 358921]
+/plugins             [32m (Status: 200)[0m [Size: 561691]
+/press               [36m (Status: 301)[0m [Size: 32][34m [--> /press-and-media][0m
+/pricing             [32m (Status: 200)[0m [Size: 595971]
+/privacy-policy      [32m (Status: 200)[0m [Size: 927117]
+/privacy-policy.html [32m (Status: 200)[0m [Size: 927117]
+/pt_BR               [32m (Status: 200)[0m [Size: 228722]
+/robots.txt          [32m (Status: 200)[0m [Size: 64]
+/robots.txt.html     [32m (Status: 200)[0m [Size: 64]
+/signup              [32m (Status: 200)[0m [Size: 289182]
+/sitemap.xml         [36m (Status: 302)[0m [Size: 34][34m [--> /sitemap_index.xml][0m
+/status              [36m (Status: 301)[0m [Size: 40][34m [--> https://status.adyen.com/][0m
+/zh_CN               [32m (Status: 200)[0m [Size: 177329]
