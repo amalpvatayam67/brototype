@@ -1,7 +1,7 @@
 # Symmetric vs Asymmetric Encryption — With Examples (AES, DES, RSA, ECC)
 
 **Author:** Amal P. • **Date:** 06 September 2025  
-**Use:** Coursework report / quick-reference README
+**Use:** Coursework report
 
 ---
 
