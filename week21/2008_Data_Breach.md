@@ -9,21 +9,21 @@
 
 ## 1. Executive Summary
 
-- 73% of breaches were caused by external sources. :contentReference[oaicite:3]{index=3}
-- 18% were caused by insiders. :contentReference[oaicite:4]{index=4}
-- 39% involved a partner in the chain (vendor / business-partner) as the breach source. :contentReference[oaicite:5]{index=5}
-- Most breaches could have been prevented by **reasonable controls**: 87% of them were considered avoidable. :contentReference[oaicite:6]{index=6}
-- Many organisations did _not know where all their data was_. Data the victim did _not know was on the system_ appeared in 66% of the incidents. :contentReference[oaicite:7]{index=7}
-- A large portion of breaches were neither extremely difficult nor highly targeted: 15% fully targeted, 39% random opportunistic, 46% directed opportunistic. :contentReference[oaicite:8]{index=8}
+- 73% of breaches were caused by external sources.
+- 18% were caused by insiders.
+- 39% involved a partner in the chain (vendor / business-partner) as the breach source.
+- Most breaches could have been prevented by **reasonable controls**: 87% of them were considered avoidable.
+- Many organisations did _not know where all their data was_. Data the victim did _not know was on the system_ appeared in 66% of the incidents.
+- A large portion of breaches were neither extremely difficult nor highly targeted: 15% fully targeted, 39% random opportunistic, 46% directed opportunistic.
 
 ---
 
 ## 2. Investigation Methodology
 
-- Cases cover 2004-2007 timeframe, drawn from the Verizon Business Investigative Response team’s engagements. :contentReference[oaicite:9]{index=9}
-- Created a repository of hundreds of standard data-points per case (metrics) once investigations concluded. :contentReference[oaicite:10]{index=10}
-- Data includes tens of thousands of data points across 500+ investigations, covering more than 230 million compromised records. :contentReference[oaicite:11]{index=11}
-- Note: The dataset is subject to selection bias (only those cases where Verizon was engaged). :contentReference[oaicite:12]{index=12}
+- Cases cover 2004-2007 timeframe, drawn from the Verizon Business Investigative Response team’s engagements.
+- Created a repository of hundreds of standard data-points per case (metrics) once investigations concluded.
+- Data includes tens of thousands of data points across 500+ investigations, covering more than 230 million compromised records. 
+- Note: The dataset is subject to selection bias (only those cases where Verizon was engaged). 
 
 ---
 
@@ -31,19 +31,19 @@
 
 ### 3.1 Industries
 
-- Retail: 35% :contentReference[oaicite:13]{index=13}
-- Food & Beverage: 20% :contentReference[oaicite:14]{index=14}
-- Financial Services: 14% :contentReference[oaicite:15]{index=15}
-- Technology/Services: 13% :contentReference[oaicite:16]{index=16}
-- Other (Education, Government, Manufacturing etc) smaller proportions. :contentReference[oaicite:17]{index=17}
+- Retail: 35%
+- Food & Beverage: 20% 
+- Financial Services: 14% 
+- Technology/Services: 13% 
+- Other (Education, Government, Manufacturing etc) smaller proportions. 
 
 ### 3.2 Organisation size
 
-- 11–100 employees: 30% :contentReference[oaicite:18]{index=18}
-- 101–1,000: 22% :contentReference[oaicite:19]{index=19}
-- 1,001–10,000: 26% :contentReference[oaicite:20]{index=20}
-- 10,000–100,000: 14% :contentReference[oaicite:21]{index=21}
-- > 100,000: 3% :contentReference[oaicite:22]{index=22}  
+- 11–100 employees: 30%
+- 101–1,000: 22%
+- 1,001–10,000: 26%
+- 10,000–100,000: 14%
+- > 100,000: 3%
   > **Interpretation**: Breaches happened across all sizes of organisations — small to very large — indicating that size alone doesn’t guarantee immunity.
 
 ---
@@ -52,25 +52,25 @@
 
 ### 4.1 Threat sources
 
-- External: ≈ 73% :contentReference[oaicite:23]{index=23}
-- Internal (insider): ≈ 18% :contentReference[oaicite:24]{index=24}
-- Partner (third-party/vendor): ≈ 39% :contentReference[oaicite:25]{index=25}  
-  Note that percentages sum to more than 100% because some incidents involved multiple sources (e.g., partner account compromised leading to external attacker). :contentReference[oaicite:26]{index=26}
+- External: ≈ 73%
+- Internal (insider): ≈ 18%
+- Partner (third-party/vendor): ≈ 39%
+  Note that percentages sum to more than 100% because some incidents involved multiple sources (e.g., partner account compromised leading to external attacker).
 
 ### 4.2 Impact by source
 
-- Median records compromised: External ~30,000; Internal ~375,000; Partner ~187,500. :contentReference[oaicite:27]{index=27}
+- Median records compromised: External ~30,000; Internal ~375,000; Partner ~187,500.
   - Meaning: While external breaches were more frequent, insider and partner breaches tended to be larger in impact (more records).
 
 ### 4.3 Insider breakdown
 
-- Roles implicated: IT Administrators ~50%, Employees ~41% :contentReference[oaicite:28]{index=28}  
+- Roles implicated: IT Administrators ~50%, Employees ~41% 
   **Interpretation**: Insider threats may be less frequent, but when they occur, they can cause large scale damage due to access/privileges.
 
 ### 4.4 Partner/vendor involvement
 
-- 57% of partner-involved cases were via partner assets or connections being compromised. :contentReference[oaicite:29]{index=29}
-- 21% of partner-related breaches where the partner was anonymous (unspecified) in terms of the exact person. :contentReference[oaicite:30]{index=30}  
+- 57% of partner-involved cases were via partner assets or connections being compromised.
+- 21% of partner-related breaches where the partner was anonymous (unspecified) in terms of the exact person.  
   **Interpretation**: Organisations must treat their supply-chain and partner network as part of their threat surface.
 
 ---
@@ -79,44 +79,44 @@
 
 ### 5.1 Threat categories (contributing factors)
 
-- Hacking: 59% :contentReference[oaicite:31]{index=31}
-- Error: 62% :contentReference[oaicite:32]{index=32}
-- Malcode (malicious code): 31% :contentReference[oaicite:33]{index=33}
-- Deceit (e.g., phishing/spoofing): 10% :contentReference[oaicite:34]{index=34}
-- Physical: 15% :contentReference[oaicite:35]{index=35}
+- Hacking: 59% 
+- Error: 62% 
+- Malcode (malicious code): 31% 
+- Deceit (e.g., phishing/spoofing): 10% 
+- Physical: 15%
 
 ### 5.2 Attack difficulty
 
-- None: 3% :contentReference[oaicite:36]{index=36}
-- Low: 52% :contentReference[oaicite:37]{index=37}
-- Moderate: 28% :contentReference[oaicite:38]{index=38}
-- High: 17% :contentReference[oaicite:39]{index=39}  
+- None: 3% 
+- Low: 52% 
+- Moderate: 28% 
+- High: 17%   
   **Interpretation**: Most breaches were relatively low-to-moderate difficulty for attackers — meaning many were avoidable with basic controls.
 
 ### 5.3 Targeted vs Opportunistic
 
-- Fully targeted: 15% :contentReference[oaicite:40]{index=40}
-- Opportunistic (Random): 39% :contentReference[oaicite:41]{index=41}
-- Opportunistic (Directed): 46% :contentReference[oaicite:42]{index=42}  
+- Fully targeted: 15%
+- Opportunistic (Random): 39% 
+- Opportunistic (Directed): 46% 
   **Interpretation**: Majority of breaches were opportunistic rather than deeply targeted, reinforcing that organisations should not assume “we aren’t important enough to be targeted”.
 
 ### 5.4 Common attack pathways
 
-- Remote access and control: 42% :contentReference[oaicite:43]{index=43}
-- Web application: 34% :contentReference[oaicite:44]{index=44}
-- Internet-facing systems: 24% :contentReference[oaicite:45]{index=45}
-- Wireless network: 9% :contentReference[oaicite:46]{index=46}
-- Physical access: 21% :contentReference[oaicite:47]{index=47}  
+- Remote access and control: 42%
+- Web application: 34%
+- Internet-facing systems: 24%
+- Wireless network: 9%
+- Physical access: 21% 
   **Interpretation**: Remote access (vendor/admin accounts) and web apps/Internet-facing systems represent major Entry Points into organisations.
 
 ---
 
 ## 6. Data & Asset Considerations
 
-- 66% of breaches involved data the victim did _not know_ was on the system. :contentReference[oaicite:48]{index=48}
-- 75% of breaches were _not discovered by the victim_ organisation. :contentReference[oaicite:49]{index=49}  
+- 66% of breaches involved data the victim did _not know_ was on the system.
+- 75% of breaches were _not discovered by the victim_ organisation.  
   **Interpretation**: Inventory and visibility of both data and systems is critical. Hidden or unmonitored assets are a consistent risk.
-- For vulnerabilities exploited: In almost all cases where a known vulnerability was used, patching had been available **for 6 months or more**. :contentReference[oaicite:50]{index=50}  
+- For vulnerabilities exploited: In almost all cases where a known vulnerability was used, patching had been available **for 6 months or more**.  
   **Interpretation**: Many breaches could have been avoided with timely patch management.
 
 ---
@@ -129,8 +129,8 @@
 
 ### 7.2 Configuration & process failures
 
-- Omission (control not implemented) represented 79% of error-type cases. :contentReference[oaicite:51]{index=51}
-- Misconfiguration in 15% of error cases. :contentReference[oaicite:52]{index=52}
+- Omission (control not implemented) represented 79% of error-type cases.
+- Misconfiguration in 15% of error cases.
 
 ### 7.3 Vendor / Partner ecosystem vulnerabilities
 
@@ -176,19 +176,19 @@ Based on the analysis in the report, the following controls should be prioritize
 
 ### A. Key Metrics
 
-- ~230 million compromised records represented across the dataset. :contentReference[oaicite:53]{index=53}
-- Attack pathway breakdown: remote access 42%, web-app 34%, internet-facing system 24% :contentReference[oaicite:54]{index=54}
-- Attack difficulty: none 3%, low 52%, moderate 28%, high 17% :contentReference[oaicite:55]{index=55}
-- Targeting: opportunistic vs targeted: random 39%, directed 46%, targeted 15% :contentReference[oaicite:56]{index=56}
+- ~230 million compromised records represented across the dataset. 
+- Attack pathway breakdown: remote access 42%, web-app 34%, internet-facing system 24%
+- Attack difficulty: none 3%, low 52%, moderate 28%, high 17% 
+- Targeting: opportunistic vs targeted: random 39%, directed 46%, targeted 15%
 
 ### B. Definitions
 
-- **External**: threat sources outside the organisation, no implied trust. :contentReference[oaicite:57]{index=57}
-- **Internal (Insider)**: people within the organisation (employees, interns, IT staff) with some access or privilege. :contentReference[oaicite:58]{index=58}
-- **Partner / Extended enterprise**: vendors, contractors, suppliers, third-party service providers with a business relationship and some trust/privilege. :contentReference[oaicite:59]{index=59}
-- **Opportunistic (Random)**: attacker selects victim broadly, exploiting generic weakness. :contentReference[oaicite:60]{index=60}
-- **Opportunistic (Directed)**: victim is known to have a particular weakness; attacker selects accordingly. :contentReference[oaicite:61]{index=61}
-- **Targeted**: attacker selects the victim intentionally, then designs/executes attack accordingly. :contentReference[oaicite:62]{index=62}
+- **External**: threat sources outside the organisation, no implied trust.
+- **Internal (Insider)**: people within the organisation (employees, interns, IT staff) with some access or privilege.
+- **Partner / Extended enterprise**: vendors, contractors, suppliers, third-party service providers with a business relationship and some trust/privilege.
+- **Opportunistic (Random)**: attacker selects victim broadly, exploiting generic weakness.
+- **Opportunistic (Directed)**: victim is known to have a particular weakness; attacker selects accordingly.
+- **Targeted**: attacker selects the victim intentionally, then designs/executes attack accordingly.
 
 ---
 
